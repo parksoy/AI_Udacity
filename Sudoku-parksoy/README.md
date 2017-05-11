@@ -4,11 +4,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: First, I found the all boxes with 2 values. Among them, I find the twins. Then, I eliminated the common values from the peers of the common unit. This propagates the constraints for any row or column with twins.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: First, unitlist was expanded to include two diagonal units. Then, the usual reduce_puzzle(eliminate, only_choice, and naked_twins) and search functions were used to propagate the constraints.
 
 ### Install
 
@@ -37,7 +37,7 @@ To visualize your solution, please only assign values to the values_dict using t
 ### Submission
 Before submitting your solution to a reviewer, you are required to submit your project to Udacity's Project Assistant, which will provide some initial feedback.  
 
-The setup is simple.  If you have not installed the client tool already, then you may do so with the command `pip install udacity-pa`.  
+The setup is simple.  If you have not installed the client tool already, then you may do so with the command `sudo -H pip install udacity-pa`.  
 
 To submit your code to the project assistant, run `udacity submit` from within the top-level directory of this project.  You will be prompted for a username and password.  If you login using google or facebook, visit [this link](https://project-assistant.udacity.com/auth_tokens/jwt_login for alternate login instructions.
 
